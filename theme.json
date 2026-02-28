@@ -3,9 +3,58 @@
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#1a3628",
+					"name": "Brand Green",
+					"slug": "brand-green"
+				},
+				{
+					"color": "#ffbd59",
+					"name": "Brand Yellow",
+					"slug": "brand-yellow"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Base White",
+					"slug": "base-white"
+				},
+				{
+					"color": "#28523c",
+					"name": "Green Hover",
+					"slug": "brand-green-hover"
+				},
+				{
+					"color": "#e6a23e",
+					"name": "Yellow Hover",
+					"slug": "brand-yellow-hover"
+				},
+				{
+					"color": "#1c241f",
+					"name": "Text Main",
+					"slug": "text-main"
+				},
+				{
+					"color": "#526058",
+					"name": "Text Muted",
+					"slug": "text-muted"
+				},
+				{
+					"color": "#f0f4f1",
+					"name": "Surface Alt",
+					"slug": "surface-alt"
+				},
+				{
+					"color": "#c94a4a",
+					"name": "UI Danger",
+					"slug": "ui-danger"
+				}
+			]
+		},
 		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
+			"contentSize": "50rem",
+			"wideSize": "62.5rem"
 		},
 		"spacing": {
 			"units": [
@@ -18,6 +67,8 @@
 			]
 		},
 		"typography": {
+			"defaultFontSizes": false,
+			"fluid": false,
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -70,12 +121,64 @@
 					"name": "PT Serif",
 					"slug": "pt-serif"
 				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1.13rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "2rem",
+					"slug": "x-large"
+				}
 			]
 		},
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"color": {
+							"background": "var(--wp--preset--color--brand-green-hover)",
+							"text": "var(--wp--preset--color--base-white)"
+						}
+					}
+				}
+			},
+			"core/heading": {
+				"spacing": {
+					"margin": {
+						"bottom": "0.25em",
+						"top": "0.75em"
+					}
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--base-white)",
+			"text": "var(--wp--preset--color--text-main)"
+		},
 		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--brand-yellow)",
+					"text": "var(--wp--preset--color--text-main)"
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontSize": "3rem"
@@ -112,6 +215,24 @@
 					"fontStyle": "normal",
 					"fontWeight": "700"
 				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--brand-yellow-hover)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--brand-green)"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "0px",
+				"left": "1rem",
+				"right": "1rem",
+				"top": "0px"
 			}
 		},
 		"typography": {
