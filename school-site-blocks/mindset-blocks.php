@@ -36,6 +36,15 @@ function mindset_register_custom_fields() {
 			'single'       => true
 		)
 	);
+	register_post_meta(
+		'page',
+		'company_phone',
+		array(
+			'type'         => 'string',
+			'show_in_rest' => true,
+			'single'       => true
+		)
+	);
 }
 add_action( 'init', 'mindset_register_custom_fields' );
 
