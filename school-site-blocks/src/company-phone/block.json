@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "mindset-blocks/company-phone",
+	"version": "1.0.0",
+	"title": "Company Phone",
+	"category": "text",
+	"icon": "phone",
+	"description": "Output the company phone number with an optional icon.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"svgIcon": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "company-phone",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
