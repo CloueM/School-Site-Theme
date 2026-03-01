@@ -1,4 +1,6 @@
 <?php
+require_once get_template_directory() . '/school-site-blocks/mindset-blocks.php';
+
 function school_site_enqueue_assets() {
 
     if ( is_front_page() ) {
