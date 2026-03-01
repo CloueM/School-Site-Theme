@@ -1,0 +1,18 @@
+<?php
+/**
+ * Title: page-home
+ * Slug: school-site-theme/page-home
+ * Inserter: no
+ */
+?>
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"metadata":{"name":"Main"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/backgroundimg-1-1024x572.png","dimRatio":50,"customOverlayColor":"#FFF","isUserOverlayColor":true,"minHeight":861,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"sizeSlug":"large","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:861px"><img class="wp-block-cover__image-background size-large" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/backgroundimg-1-1024x572.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#FFF"></span><div class="wp-block-cover__inner-container"><!-- wp:post-title {"textAlign":"left","level":1,"align":"wide"} /--></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:post-content {"align":"wide"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
