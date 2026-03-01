@@ -1,25 +1,21 @@
 <?php
-
-function school_site_theme_assets() {
-    wp_enqueue_style( 'normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' );
-    wp_enqueue_style( 'school-site-main-style', get_stylesheet_uri(), array('normalize'), '1.0.0' );
-
+function school_site_enqueue_assets() {
+    
     if ( is_front_page() ) {
+        // 1. lightGallery CSS (CDN)
         wp_enqueue_style( 'lightgallery-css', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css' );
-        wp_enqueue_script( 'lightgallery-js', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js', array(), null, true );
+
+        // 2. lightGallery JS (CDN)
+        wp_enqueue_script( 'lightgallery-js', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js', array(), '2.7.2', true );
+
+        // 3. Settings File
         wp_enqueue_script( 
-            'lightgallery-init', 
-            get_template_directory_uri() . '/script/lightgallery-init.js', 
+            'school-gallery-init', 
+            get_template_directory_uri() . '/js/lightgallery-init.js', // Match your screenshot
             array('lightgallery-js'), 
-            null, 
+            '1.0.0', 
             true 
         );
     }
 }
-add_action( 'wp_enqueue_scripts', 'school_site_theme_assets' );
-
-function school_site_setup() {
-    add_editor_style( 'style.css' );
-    add_theme_support( 'site-icon' );
-}
-add_action( 'after_setup_theme', 'school_site_setup' );
+add_action( 'wp_enqueue_scripts', 'school_site_enqueue_assets' );
