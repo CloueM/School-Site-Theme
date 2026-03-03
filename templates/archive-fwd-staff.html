@@ -1,55 +1,25 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"lock":{"move":false,"remove":false},"align":"wide","className":"has-brand-green-color has-text-color has-link-color"} -->
-<div class="wp-block-group alignwide has-brand-green-color has-text-color has-link-color"><!-- wp:heading {"textAlign":"center","lock":{"move":true,"remove":true},"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-green-hover"}}}},"textColor":"brand-green-hover"} -->
+<!-- wp:group {"metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+
+<!-- wp:group {"templateLock":"contentOnly","lock":{"move":false,"remove":false},"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-green"}}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"textColor":"brand-green","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide has-brand-green-color has-text-color has-link-color">
+
+<!-- wp:heading {"textAlign":"center","lock":{"move":true,"remove":true},"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-green-hover"}}}},"textColor":"brand-green-hover"} -->
 <h2 class="wp-block-heading has-text-align-center has-brand-green-hover-color has-text-color has-link-color"><span style="text-decoration: underline;">Staff</span></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","placeholder":"Add a brief description for the staff page...","lock":{"move":true,"remove":true}} -->
 <p class="has-text-align-center">Our experienced faculty brings years of hands-on experience in web development and design, ensuring that our students are equipped with cutting-edge skills and knowledge. From user experience designers to back-end engineers, our team covers every facet of web development and design to guide you through your learning journey. The administrative staff is here to provide seamless support, helping you focus on what matters most—mastering the art of coding and creating exceptional digital experiences. Explore below to meet the people who make us a thriving hub for innovation and growth!</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+</div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide">Administrative</h2>
-<!-- /wp:heading -->
+<!-- wp:pattern {"slug":"school-site-theme/staff-by-department"} /-->
 
-<!-- wp:separator {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"brand-yellow"} -->
-<hr class="wp-block-separator alignwide has-text-color has-brand-yellow-color has-alpha-channel-opacity has-brand-yellow-background-color has-background" style="margin-top:0;margin-bottom:0"/>
-<!-- /wp:separator -->
-
-<!-- wp:query {"queryId":8,"query":{"perPage":10,"pages":0,"offset":0,"postType":"fwd-staff","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"fwd-staff-department":[9]},"parents":[],"format":[]},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","columnCount":2}} -->
-<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group"><!-- wp:post-title {"textAlign":"left","style":{"spacing":{"margin":{"right":"0","left":"0","top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"large"} /-->
-
-<!-- wp:post-featured-image {"style":{"spacing":{"margin":{"right":"0","left":"0","top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0"}},"border":{"radius":{"topRight":"50px","bottomLeft":"50px"}}}} /-->
-
-<!-- wp:post-content {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
-<!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
-
-<!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide">Faculty</h2>
-<!-- /wp:heading -->
-
-<!-- wp:separator {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"brand-yellow"} -->
-<hr class="wp-block-separator alignwide has-text-color has-brand-yellow-color has-alpha-channel-opacity has-brand-yellow-background-color has-background" style="margin-top:0;margin-bottom:0"/>
-<!-- /wp:separator -->
-
-<!-- wp:query {"queryId":8,"query":{"perPage":10,"pages":0,"offset":0,"postType":"fwd-staff","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"fwd-staff-department":[8]},"parents":[],"format":[]},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","columnCount":2}} -->
-<!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:post-title {"textAlign":"left","style":{"spacing":{"margin":{"right":"0","left":"0","top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"large"} /-->
-
-<!-- wp:post-featured-image {"style":{"spacing":{"margin":{"right":"0","left":"0","top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0"}},"border":{"radius":{"topRight":"50px","bottomLeft":"50px"}}}} /-->
-
-<!-- wp:post-content {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
-<!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query --></div>
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
