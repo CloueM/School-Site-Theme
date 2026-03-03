@@ -16,6 +16,19 @@ function school_site_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'school_site_enqueue_assets' );
 
+// Enqueue Staff archive styles
+function school_site_enqueue_staff_styles() {
+    if ( is_post_type_archive( 'fwd-staff' ) ) {
+        wp_enqueue_style(
+            'school-staff',
+            get_template_directory_uri() . '/assets/css/staff.css',
+            array(),
+            '1.0.0'
+        );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'school_site_enqueue_staff_styles' );
+
 // CPT & Taxonomies
 require get_template_directory() . '/inc/post-types-taxonomies.php';
 
