@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-green"}}}},"textColor":"brand-green","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide has-brand-green-color has-text-color has-link-color"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-green-hover"}}}},"textColor":"brand-green-hover"} -->
+<h2 class="wp-block-heading has-text-align-center has-brand-green-hover-color has-text-color has-link-color"><span style="text-decoration: underline;">Students</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"backgroundColor":"brand-yellow"} -->
+<hr class="wp-block-separator has-text-color has-brand-yellow-color has-alpha-channel-opacity has-brand-yellow-background-color has-background"/>
+<!-- /wp:separator -->
+
+<!-- wp:query {"queryId":6,"query":{"perPage":10,"pages":0,"offset":0,"postType":"fwd-student","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"center","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"isLink":true,"align":"wide","fontSize":"large"} /-->
+
+<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"2/3","width":"","height":"","sizeSlug":"full","style":{"border":{"width":"0px","style":"none","radius":{"topLeft":"0px","topRight":"32px","bottomLeft":"32px","bottomRight":"0px"}},"spacing":{"margin":{"right":"0","left":"0"}},"layout":{"selfStretch":"fill","flexSize":null}}} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-muted"}}}},"textColor":"text-muted"} -->
+<p class="has-text-muted-color has-text-color has-link-color">Specialty:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-terms {"term":"fwd-student-category"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
