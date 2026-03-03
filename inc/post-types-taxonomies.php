@@ -271,9 +271,9 @@ function school_register_staff_taxonomies() {
 
         // Capability restriction (after creating terms)
         'capabilities' => array(
-            'manage_terms' => 'manage_categories',
-            'edit_terms'   => 'manage_categories', 
-            'delete_terms' => 'manage_categories',
+            'manage_terms' => 'do_not_allow',
+            'edit_terms'   => 'do_not_allow',
+            'delete_terms' => 'do_not_allow',
             'assign_terms' => 'edit_posts',
         ),
     );
