@@ -69,3 +69,14 @@ function school_force_featured_image_size_in_taxonomy( $html, $post_id, $post_th
     return $html;
 }
 add_filter( 'post_thumbnail_html', 'school_force_featured_image_size_in_taxonomy', 10, 5 );
+
+// Staff CPT & Taxonomy
+// Change "Add title" Placeholder to "Add Staff name"
+
+add_filter( 'enter_title_here', 'school_change_staff_title_placeholder', 10, 2 );
+function school_change_staff_title_placeholder( $title, $post ) {
+    if ( $post->post_type === 'fwd-staff' ) {
+        $title = 'Add staff name';
+    }
+    return $title;
+}
