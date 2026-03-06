@@ -14,3 +14,13 @@ Text Domain: school-site-theme
 Update URI: false
 */
 
+header.wp-block-template-part {
+	position: sticky !important;
+	top: -174px !important; 
+	z-index: 9999;
+}
+
+header.wp-block-template-part,
+header.wp-block-template-part .wp-block-group {
+	overflow: visible !important;
+}

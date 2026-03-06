@@ -16,6 +16,18 @@ function school_site_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'school_site_enqueue_assets' );
 
+// Enqueue the theme's main stylesheet (required for block themes — NOT auto-loaded unlike classic themes)
+function school_site_enqueue_theme_styles() {
+    wp_enqueue_style(
+        'school-site-theme-styles',
+        get_template_directory_uri() . '/style.css',
+        array(),
+        wp_get_theme()->get( 'Version' )
+    );
+}
+add_action( 'wp_enqueue_scripts', 'school_site_enqueue_theme_styles' );
+
+
 // Enqueue Staff archive styles
 function school_site_enqueue_staff_styles() {
     if ( is_post_type_archive( 'fwd-staff' ) ) {
