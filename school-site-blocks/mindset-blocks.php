@@ -22,27 +22,30 @@ function mindset_register_custom_fields() {
 		'page',
 		'company_email',
 		array(
-			'type'         => 'string',
-			'show_in_rest' => true,
-			'single'       => true
+			'type'          => 'string',
+			'show_in_rest'  => true,
+			'single'        => true,
+			'auth_callback' => '__return_true',
 		)
 	);
 	register_post_meta(
 		'page',
 		'company_address',
 		array(
-			'type'         => 'string',
-			'show_in_rest' => true,
-			'single'       => true
+			'type'          => 'string',
+			'show_in_rest'  => true,
+			'single'        => true,
+			'auth_callback' => '__return_true',
 		)
 	);
 	register_post_meta(
 		'page',
 		'company_phone',
 		array(
-			'type'         => 'string',
-			'show_in_rest' => true,
-			'single'       => true
+			'type'          => 'string',
+			'show_in_rest'  => true,
+			'single'        => true,
+			'auth_callback' => '__return_true',
 		)
 	);
 }

@@ -12,9 +12,37 @@
     "html": false
   },
   "attributes": {
+    "address": {
+      "type": "string",
+      "default": ""
+    },
+    "city": {
+      "type": "string",
+      "default": ""
+    },
+    "state": {
+      "type": "string",
+      "default": ""
+    },
+    "zipCode": {
+      "type": "string",
+      "default": ""
+    },
+    "country": {
+      "type": "string",
+      "default": ""
+    },
     "svgIcon": {
       "type": "boolean",
       "default": false
+    },
+    "iconColor": {
+      "type": "string",
+      "default": ""
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": ""
     }
   },
   "textdomain": "company-address",

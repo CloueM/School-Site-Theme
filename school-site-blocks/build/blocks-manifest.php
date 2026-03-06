@@ -17,9 +17,37 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
+			'address' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'city' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'state' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'zipCode' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'country' => array(
+				'type' => 'string',
+				'default' => ''
+			),
 			'svgIcon' => array(
 				'type' => 'boolean',
 				'default' => false
+			),
+			'iconColor' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'maxWidth' => array(
+				'type' => 'string',
+				'default' => ''
 			)
 		),
 		'textdomain' => 'company-address',
@@ -43,9 +71,21 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
+			'email' => array(
+				'type' => 'string',
+				'default' => ''
+			),
 			'svgIcon' => array(
 				'type' => 'boolean',
 				'default' => false
+			),
+			'iconColor' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'maxWidth' => array(
+				'type' => 'string',
+				'default' => ''
 			)
 		),
 		'textdomain' => 'company-email',
@@ -69,9 +109,21 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
+			'phone' => array(
+				'type' => 'string',
+				'default' => ''
+			),
 			'svgIcon' => array(
 				'type' => 'boolean',
 				'default' => false
+			),
+			'iconColor' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'maxWidth' => array(
+				'type' => 'string',
+				'default' => ''
 			)
 		),
 		'textdomain' => 'company-phone',
