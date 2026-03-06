@@ -12,9 +12,21 @@
 		"html": false
 	},
 	"attributes": {
+		"phone": {
+			"type": "string",
+			"default": ""
+		},
 		"svgIcon": {
 			"type": "boolean",
 			"default": false
+		},
+		"iconColor": {
+			"type": "string",
+			"default": ""
+		},
+		"maxWidth": {
+			"type": "string",
+			"default": ""
 		}
 	},
 	"textdomain": "company-phone",
